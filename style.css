@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #fff8e7;
+    color: #333;
+}
+
+/* navbar */
+.navbar {
+    background-color: #4b0082;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    color: yellow;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+}
+
+.nav-links {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* home */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffe4b5;
+    border-bottom: 3px solid #4b0082;
+}
+
+.hero h1 {
+    color: #800000;
+    font-family: "Times New Roman", serif;
+    font-size: 36px;
+}
+
+.btn {
+    background-color: #800000;
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a52a2a;
+}
+
+/* sections */
+.section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.section.dark {
+    background-color: #f3e5f5;
+}
+
+.section h2 {
+    color: #4b0082;
+    font-family: "Times New Roman", serif;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+/* zodiac cards */
+.zodiac-grid {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.zodiac-card {
+    background-color: white;
+    border: 2px solid #4b0082;
+    padding: 10px;
+}
+
+.zodiac-card .symbol {
+    font-size: 35px;
+    color: #800000;
+}
+
+.zodiac-card h3 {
+    margin: 5px 0;
+    color: #4b0082;
+}
+
+.zodiac-card small {
+    color: gray;
+}
+
+/* forms */
+.form-box {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #999;
+    text-align: left;
+}
+
+.form-box label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.form-box .btn {
+    margin-top: 15px;
+}
+
+/* result */
+.result {
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffcc;
+    border: 2px dashed #800000;
+    display: none;
+}
+
+.result h3 {
+    color: #800000;
+    margin-top: 0;
+}
+
+/* footer */
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .logo, .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    .zodiac-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
